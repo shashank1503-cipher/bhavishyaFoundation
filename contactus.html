@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bhavishya Foundation</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Roboto&display=swap" rel="stylesheet">
+<style>
+    body
+    {
+        background-color: #6ec8f0;
+    }
+</style>
+<body>
+    
+    <div class="navBar" id = "navBarId">
+        <img src = "logo.png">
+        
+        <div class="menu"  onclick="openNav()"><svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="80" height="5" rx = "3"></rect>
+            <rect y="20" width="80" height="5" rx = "3"></rect>
+            <rect x = "30" y="40" width="50" height="5" rx = x`"3"></rect>
+          </svg></div>
+    </div>
+    
+    <!--Top Navigation Bar end --> 
+    
+    <!--Hamburgur Menu Start -->   
+    
+    <div class="menuBar" id = "menuBarId">
+        <div class="header" id = "headerId">
+            <img src = "logo.png">
+            <div class="menuContent" >+91-9XXXXXXXXX | bhavishyafoundation@example.com <span class = "close" style="font-size:5vh;margin-left:2em;"> <a href="javascript:void(0)" onclick="closeNav()" style = "text-decoration: none;color: #a8b1bd;">&times;</a></span></div>
+        </div>
+        <div class="emptyGray" id = "emptyGrayId"></div>
+        <div class="links" id = "linksId">
+            <ul style=" list-style-type: none; padding-top: 0.8rem;padding-left: 3rem; ">
+                <li><a href = "index.html">HOME</a></li>
+                <li><a href = "about.html">ABOUT US</a></li>
+                <li><a href = "#">VOLUNTEER</a></li>
+                <li><a href = "picture.html">PICTURE GALLERY</a></li>
+                <li><a href = "events.html">EVENTS</a></li>
+                <li><a href = "contactus.html">CONTACT US</a></li>
+            </ul></div>
+    </div>
+    
+    <!--Hamburgur Menu End -->   
+    
+    <!--Shadow Overlay for bg when menu opens -->   
+    
+    <div class="overlay" id = "overlayId">
+    </div>
+<!--ContactDetails-->
+    <div class = "center">
+        <div class="content" >
+            <h1 style="font-size: 7.5vh;">Contact Us</h1>
+            <p style="width: 100%;font-size: 2.5vh;line-height: 1.6;">
+                
+                    <font color = "#000"><strong>Address:</strong></font> 3204 Goldcliff Circle, Washington DC 20016<br>
+                    <font color = "#000"><strong>Phone:</strong></font> (202)243-8097 <br>  
+                    <font color = "#000"><strong>Email:</strong></font> bhavishyafoundation@gmail.com <br>
+                    <font color = "#000"><strong>WhatsApp:</strong></font> +91-9XXXXXXXXX <br>    
+            </p>
+            <center><a href="index.html" class="button">Go Home</a></center>
+        </div>
+        
+    </div>
+    <script>
+        function openNav() {
+          
+          document.getElementById("menuBarId").style.height = "24.5rem";
+          document.getElementById("menuBarId").style.backgroundColor = "white";
+          var delayInMilliseconds = 50; 
+          setTimeout(function() {
+            document.getElementById("overlayId").style.display= "initial";
+        }, delayInMilliseconds);
+        
+        }
+        
+        function closeNav() {
+            
+            document.getElementById("menuBarId").style.height = "0rem";
+            document.getElementById("overlayId").style.display= "none";
+            
+               
+        }
+        var counter = 1;
+        setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 3){
+            counter = 1;
+        }
+        }, 3000);
+        </script>
+</body>
+</html>
