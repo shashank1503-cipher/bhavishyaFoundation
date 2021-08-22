@@ -327,6 +327,10 @@ svg
     grid-template-columns: 50% 50%;
     grid-gap:0px;
 }
+.content
+{
+    padding-top: 15%;padding-left: 15%;
+}
 .content h1
 {
     font-family: 'Poppins', sans-serif;
@@ -343,6 +347,7 @@ svg
     font-size:2.22vh;
     color:#585c61;
     margin-bottom: 5%;
+    
 }
 .button
 {
@@ -576,6 +581,121 @@ svg
     padding: 2%;  
     border-radius: 10px; 
   }
+  @media only screen and (max-width: 768px) 
+{
+    .navBar
+    {
+        width: 100%;
+        overflow: hidden;
+    }
+    .navBar img
+    {
+        padding: 1rem;
+        margin: 0;
+        height: 2.5rem;
+        
+    }
+    .header img
+    {
+        padding: 1rem;
+        margin: 0;
+        height: 2.5rem;
+    }
+    .menu
+    {
+        float: right;
+        padding-top: 5%;
+        font-size: 1.5rem;
+    }
+    .menuContent p
+    {
+        width: fit-content;
+        padding-right: 3rem;        
+    }
+    .close
+    {
+        float: right;
+        margin: 0%;
+
+    }
+    .content
+    {
+        padding-top: 0;padding-left: 0;
+
+        
+    }
+    .content h1
+    {
+        font-size: 4vh;
+        width: 100%;
+    }
+    .content p
+    {
+        width: 100%;
+        
+    }
+    .secondHero
+    {
+        grid-template-columns: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .last
+    {
+        grid-template-columns: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .footer
+    {
+        grid-template-columns: 100%;
+        padding: 0;
+        margin: 0; 
+    }
+    .info
+    {
+       padding-right: 10%; 
+        padding-bottom: 20%;
+    }
+    .info p
+    {
+        font-size: 2vh;
+    }
+    .copyright
+    {
+        padding-left: 20%;
+        margin-top: 7.5%;
+    }
+    .button
+    {
+        display: block;
+        width: 50%;
+        margin-bottom: 2%;
+        
+    }
+
+    .navigation-auto,.navigation
+    {
+        top: 72.5%;
+        
+        width: 100%;
+
+    }
+    .pictureContainer img
+    {
+        padding: 0;
+    }
+    .cards,.vcards
+    {
+        grid-template-columns: auto;
+        grid-gap: 2rem;
+    }
+    .center
+    {
+        width: 90%;
+    }
+    
+}
   
   
   
